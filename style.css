@@ -1,0 +1,42 @@
+body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+    #toolbar {
+      position: fixed;
+      top: 10px; left: 10px;
+      display: flex;
+      gap: 5px;
+      z-index: 10;
+    }
+    .btn {
+      border: 1px solid #000;
+      background: #fff;
+      color: #000;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+    .btn.active {
+      background: #000;
+      color: #fff;
+    }
+    .idea {
+      position: absolute;
+      min-width: 60px;
+      padding: 6px;
+      background: #fff;
+      border: 1px solid #000;
+      cursor: move;
+      user-select: none;
+    }
+    .idea[contenteditable]:focus {
+      outline: none;
+      border: 1px dashed #000;
+    }
+    canvas {
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 0;
+    }
